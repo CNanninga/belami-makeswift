@@ -1,11 +1,11 @@
-import { ReactRuntime } from "@makeswift/runtime/react"
+import { runtime } from "./runtime"
 import { Style } from "@makeswift/runtime/controls"
 
 function HelloWorld(props: any) {
   return <p {...props}>Hello, world!</p>
 }
 
-ReactRuntime.registerComponent(HelloWorld, {
+runtime.registerComponent(HelloWorld, {
   type: "hello-world",
   label: "Hello, world!",
   props: {
